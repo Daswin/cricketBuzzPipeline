@@ -38,7 +38,7 @@ resource "google_storage_bucket_object" "etl_sctipt"{
 
 resource "google_storage_bucket_object" "json_file"{
     bucket = google_storage_bucket.bucket1.id
-    name = "bqschema.json"
+    name = "bqSchema.json"
     source = "../bqschema.json"
 }
 
@@ -90,7 +90,7 @@ resource "google_cloudfunctions2_function" default {
 
     event_trigger{
             event_type = "google.cloud.storage.object.v1.finalized"
-            service_account_email = "494025100653-compute@developer.gserviceaccount.com"
+            service_account_email = var.service_account
 
             event_filters {
               attribute = "bucket"

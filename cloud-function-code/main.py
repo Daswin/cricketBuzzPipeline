@@ -16,7 +16,7 @@ def loadData(cloud_event):
         "JSONPath": "gs://practice-6032-central/bqSchema.json",
         "javascriptTextTransformFunctionName": "transform",
         "outputTable": "project-practice-439802.cricket.icc_odi_rankings",
-        "inputFilePattern": "gs://project-6032-cricket-data/batsmen_rankings.csv",
+        "inputFilePattern": "gs://practice-6032-cricket-data/batsmen_rankings.csv",
         "bigQueryLoadingTemporaryDirectory": "gs://practice-6032-central/temp",
         }
     }

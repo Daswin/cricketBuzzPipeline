@@ -15,9 +15,13 @@ variable "path"{
 }
 
 variable "bucket_name1"{
-    default = "project-6032-central"
+    default = "practice-6032-central"
 }
 
 variable "bucket_name2"{
-    default = "project-6032-cricket-data"
+    default = "practice-6032-cricket-data"
+}
+
+variable "service_account"{
+    default = "494025100653-compute@developer.gserviceaccount.com"
 }

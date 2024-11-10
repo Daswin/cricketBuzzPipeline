@@ -19,7 +19,7 @@ def pullData():
 
 
 def uploadToCloudStorage(csv_filename):
-    bucket_name = 'project-6032-cricket-data'
+    bucket_name = 'practice-6032-cricket-data'
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
     destination_blob_name = f'{csv_filename}' #the path to data
